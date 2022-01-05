@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript AJAX</title>
+    <style>
+     .error { border-color: red; }
+    </style>
+</head>
+
+<body>
+	<h1>AJAX methods</h1>
+	<form>
+		<input id="Surname" type="text" placeholder="Surname" onkeyup="check()"><br><br>
+		<input id="Name" type="text" placeholder="Name" onkeyup="check()"><br><br>
+		<input id="Age" type="text" placeholder="Age" onkeyup="check()" onblur="validateAge()"><br><br>
+		<input id="Address" type="text" placeholder="Place of residence" onkeyup="check()"><br>
+		<p id="Message">To send the form, you must fill in all the fields correctly!</p>
+		<input id="AjaxGET" type="button" value="Ajax GET" onclick="sendDataByGetMethod()" disabled>
+		<input id="AjaxPOST" type="button" value="Ajax POST" onclick="sendDataByPostMethod()" disabled>
+		<input type="button" value="Clear Fields" onclick="clearFields()">
+	</form>
+
+    <script src="task.js"></script>
+
+</body>
+</html>
